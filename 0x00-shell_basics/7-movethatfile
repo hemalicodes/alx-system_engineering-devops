@@ -1,6 +1,5 @@
 #!/bin/bash
-cd ~
-cd ..
-touch tmp/betty
-mv tmp/betty tmp/my_first_directory
+
+touch ~/../tmp/betty
+mv ~/../tmp/betty ~/../tmp/my_first_directory/
 
