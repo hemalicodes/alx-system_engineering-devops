@@ -8,17 +8,18 @@
  */
 char *_strcat(char *dest, char *src)
 {
-char *ptr = dest;
-while(*ptr)
+int count = 0, counter = 0;
+while(*(dest + count) != '\0')
 {
-ptr++;
+count++;
 }
-while(*src)
+while(counter >= 0)
 {
-*ptr = *src;
-ptr++;
-src++;
+*(dest + count) = *(src + counter);
+if(*(src + counter) == '\0')
+break;
+count++;
+counter++;
 }
-*ptr = '\0';
-return dest;
+return (dest);
 }
